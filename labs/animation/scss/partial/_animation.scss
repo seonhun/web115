@@ -1,0 +1,56 @@
+* {
+    transition: all 0.2s ease-in-out;
+}
+.slow {
+    a {
+        transition: all 2.5s ease-in;
+    }
+}
+.button {
+    a {
+        transition: background 0.4s ease-in-out,
+              top 1s ease-in-out,
+              box-shadow 0.1s ease-in-out;
+    }
+}
+
+.letter {
+    letter-spacing: 0.05em;
+    a {
+        letter-spacing: 0;
+        transition: letter-spacing 0.2s ease-in-out;
+        &:hover {
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+        }
+    }
+}
+
+.gear {
+    li {
+        a {
+            &:before {
+                transition: transform 2.5s ease-in-out,
+                  box-shadow 0.2s ease-in-out;
+            }
+        }
+        &:hover {
+            a {
+                &:before {
+                    transform: rotateZ(random(720)+deg);
+                }
+            }
+        }
+    }
+}
+
+.scroll {
+    li {
+        transition: all 0.5s ease-in-out;
+        overflow: hidden;
+        a {
+            transition: all 0.6s ease-in-out;
+            overflow: hidden;
+        }
+    }
+}
