@@ -1,0 +1,112 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition-property: width, height;
+    transition-delay: 0s; //start immediately; can do ms as well
+    transition-duration: 2s, 1s;
+    // transition-timing-function: linear; //ease-in and ease-out
+    &:hover {
+        width: 400px; //too abrupt of a change
+        height: 400px;
+    }
+}
+
+.a {
+    // transition-timing-function: linear;
+    transition: width 2s linear 0; //all properties
+}
+.b {
+    transition-timing-function: ease-in;
+}
+.c {
+    transition-timing-function: ease-out;
+}
+.d {
+    transition-timing-function: ease-in-out;
+}
+.left_slide {
+    position: relative;
+    // left: -300px;
+    top: 300px;
+}
+.container {
+    border: 1px solid grey;
+    overflow: hidden;
+}
+.container:hover .left_slide {
+    transition: 1s ease-in;
+    // left: 0;
+    top: 0;
+}
+.container2:hover .box2 {
+    transform: skew(20deg); //skewX and skewY go opposite ways
+    transform: rotate(45deg);
+    transform: scale(1.05);
+    transition: 2s ease-in;
+    transform: translate(50px, 50px);
+}
+.container3:hover .box2 {
+    // animation-name: square;
+    animation-name: roll;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-duration: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+}
+.container3 {
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+.box2 {
+    position: relative;
+}
+@keyframes square {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        left: 0;
+        top: 200px;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        left: 200px;
+        top: 0;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes roll {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.right_slide {
+    position: relative;
+    left: -300px;
+}
+.container3:hover .right_slide {
+    animation: left_in 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes left_in {
+    from{
+        left: -300px;
+    }
+    to{
+        left: 0;;
+    }
+}
