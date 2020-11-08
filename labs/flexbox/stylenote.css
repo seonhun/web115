@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.parent {
+    display: flex;
+    border: 2px solid lightcoral;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    /* above 2 lines are same as below */
+    /* row-reverse direction completely reverses */
+    /* wrap makes the boxes inside the flexbox wrap around while nowrap results in smaller boxes */
+    /* wrap reverse puts everything wrapped to top */
+    /* flex-direction: column;  */
+    /* results in vertical alignment */
+    /* must negate line-height in .item before putting height: 200px; */
+    /* can use overflow: auto to prevent content from leaking out of box */
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    /* default */
+    /* flex-end is like reverse
+    space-between keeps space-between equal
+    space-around keeps all space equal */
+    /* absolute centering is align-items and justify-content as center */
+    align-items: center;
+    /* keeps all items vertically centered regardless of height entered */
+    /* flex-start makes it go to top of box and flex-end makes it go to bottom of background-origin: 
+    stretch makes boxes stretch vertically up to margin */
+    /* align-items: baseline; */
+    /* text of line-height are same */
+    position: relative;
+}
+
+
+.item {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+.item:nth-child(1){
+    font-size: 25px;
+    flex-grow: 4;
+    /* makes it so that it shrinks and grows 4 times as fast as number 2 */
+    align-self: flex-start;
+    /* overides align center above */
+}
+.item:nth-child(2){
+    font-size: 30px;
+    flex-shrink: 0;
+    /* makes it so that this box does not shrink at all; default value is 1 */
+}
+.item:nth-child(3){
+    font-size: 30px;
+    flex-basis: 200px;
+    /* sets initial length of item  */
+    flex: 0 0 300px;
+    /* sets growth, shrink, and basis */
+    align-self: flex-end;
+}
+.item1{
+    order: 0;
+    /* default order */
+}
+.item2{
+    order: 2;
+    /* goes before item1 */
+}
+.item3{
+    order: -1;
+    /* goes after regular items */
+}
