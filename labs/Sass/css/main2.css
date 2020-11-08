@@ -1,0 +1,210 @@
+@charset "UTF-8";
+header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #59adff;
+  display: flex;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  font-size: 2.5rem;
+  box-shadow: 0 2px 4px black;
+}
+
+header div {
+  justify-self: center;
+}
+
+header div div h1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+  justify-content: left;
+  font-size: 0.8rem;
+  overflow: visible;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.abbrv, body nav, body .resume aside, body .resume aside ul li a, .flex-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body nav {
+  background-color: #b5e742;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 2px 4px black;
+}
+
+body nav .bar {
+  justify-content: space-between;
+}
+
+body nav .bar ul {
+  margin: 0 1rem;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+body nav .bar ul li {
+  background-color: #f8c822;
+  overflow: wrap;
+  display: inline-block;
+  padding: 1em;
+  box-shadow: 0 3px 6px black;
+}
+
+body nav .bar ul li a {
+  padding: 0.5em 0.5em;
+  width: 6em;
+}
+
+body .resume {
+  margin: 0;
+  font-family: 'Scheherazade', serif;
+  line-height: 1.4;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+body .resume main {
+  flex: 80%;
+  order: 1;
+}
+
+body .resume aside {
+  flex: 20%;
+  padding: 20px;
+  order: 0;
+}
+
+body .resume aside ul {
+  list-style-type: none;
+  flex: 1;
+}
+
+body .resume aside ul li {
+  text-align: center;
+  padding: 2px;
+  display: inline-block;
+}
+
+body .resume aside ul li a {
+  background-color: #59adff;
+  color: #fff;
+  border: 2px solid #f8c822;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  display: flex;
+  text-decoration: none;
+}
+
+body .resume aside ul li a:hover {
+  cursor: pointer;
+}
+
+body .resume aside ul li:last-child {
+  margin-bottom: 0;
+}
+
+body .resume aside ul li :not(i) {
+  transform-origin: 0px 0px;
+}
+
+body .resume aside ul li i {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+}
+
+.subed {
+  margin-left: 5%;
+}
+
+.divider {
+  background: transparent;
+  padding: 1em;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto;
+  padding: 20px;
+}
+
+.flex-container .card {
+  box-shadow: 0 4px 8px black;
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 5px;
+  background-color: #f8c822;
+}
+
+.flex-container .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-container img {
+  border-radius: 5px 5px 0 0;
+  height: 150px;
+  width: auto;
+}
+
+.flex-container .container {
+  padding: 2px 16px;
+}
+
+.container {
+  padding: 2px 16px;
+  justify-content: center;
+}
+
+.container h2 {
+  line-height: 5em;
+}
+
+.container p {
+  text-align: center;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
+.container ul li {
+  padding-left: 16px;
+  line-height: 1.2em;
+}
+
+.container ul li:before {
+  content: "•";
+  padding-right: 8px;
+  color: #59adff;
+}
+
+.container2 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+footer {
+  text-align: right;
+}

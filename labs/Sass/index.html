@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass Example</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <p>Sass does not have semicolons or brackets vs SCSS</p>
+    <p>Variables when using something over and over again (color, padding, font) at top; [#name: value;]</p>
+    <p>nesting allows for simplification (instead of nav ul, write nav{ ul{)</p>
+        <p>
+            @import to copy files
+            @extend to copy a .css
+        </p>
+        <p>
+            partials are partial .scss used to import into main.scss and generate main.css (labelled _name.scss)
+        </p>
+        <p>operations are possible (1px / 2px * 100%)</p>
+        <p>mixins are similar to functions and pass value in to populate multiple; @mixin default-padding($value) { padding=left: $value;} .panel {.panel {@include default-padding(10px);}</p>
+        <p>&- for parent elements (.button {&:visited {} &:hover{} &:active {}})</p>
+
+</body>
+</html>

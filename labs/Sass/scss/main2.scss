@@ -1,0 +1,179 @@
+// $pcolor: #59adff;
+$scolor: #f8c822;
+$tcolor: #b5e742;
+@import 'header';
+// @mixin default-shadow($value) {
+//     box-shadow: 0 $value $value*2 black;
+// }
+
+
+* {
+    box-sizing: border-box;
+}
+
+.abbrv{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    // display: flex;
+    nav {
+        background-color: $tcolor;
+        width: 100%;
+        @extend .abbrv;
+        display: flex;
+        @include default-shadow(2px);
+        .bar {
+            justify-content: space-between;
+            ul {
+                margin: 0 1rem;
+                flex-grow: 1;
+                justify-content: center;
+                li {
+                    background-color:$scolor;
+                    overflow: wrap;
+                    display: inline-block;
+                    padding: 1em;
+                    @include default-shadow(3px);
+                    a {
+                        padding: 0.5em 0.5em;
+                        width: 6em;
+                    }
+                }
+            }
+        }
+        
+    }
+    .resume {
+        margin: 0;
+        font-family: 'Scheherazade', serif;
+        line-height: 1.4;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        main{
+            flex: 4/5*100%;
+            order: 1;
+        }
+        aside{
+            flex: 1/5*100%;
+            padding: 20px;
+            order: 0;
+            @extend .abbrv;
+            ul {
+                list-style-type: none;
+                flex: 1;
+                li {
+                    text-align: center;
+                    padding: 2px;
+                    display: inline-block;
+                    
+                    a {
+                        background-color: $pcolor;
+                        color: #fff;
+                        border: 2px solid$scolor;
+                        border-radius: 50%;
+                        width: 2em;
+                        height: 2em;
+                        display: flex;
+                        @extend .abbrv;
+                        text-decoration: none;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    :not(i) {
+                        transform-origin: 0px 0px;
+                    }
+                    i {
+                        display: inline-block;
+                        font-size: inherit;
+                        height: 1em;
+                        overflow: visible;
+                        vertical-align: -.125em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.subed {
+    margin-left: 5%;
+}
+
+.divider {
+    background: transparent;
+    padding: 1em;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    @extend .abbrv;
+    justify-content: space-around;
+    overflow: auto;
+    padding: 20px;
+    .card {
+        @include default-shadow(4px);
+        transition: 0.3s;
+        width: 30%;
+        border-radius: 5px;
+        background-color:$scolor;
+
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    }
+    img {
+        border-radius: 5px 5px 0 0;
+        height: 150px;
+        width: auto;
+    }
+
+    .container {
+        padding: 2px 16px;
+    }
+    
+}
+
+.container {
+    padding: 2px 16px;
+    justify-content: center;
+    h2 {
+        line-height: 5em;
+    }
+    p { 
+        text-align: center;
+    }
+    ul {
+        list-style-type: none;
+        li {
+            padding-left: 16px;
+            line-height: 1.2em;
+            &:before {
+                content: "•";
+                padding-right: 8px;
+                color: $pcolor;
+            }
+        }
+    }
+}
+
+.container2 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+footer {
+    text-align: right;
+}
