@@ -1,0 +1,114 @@
+<!-- Create a 3-page site for a restaurant, coffee shop, or similar type of business (with approval). Your site should:
+
+Use an external style sheet that applies to all pages
+Be hand-coded in your own markup, not a framework (e.g. Bootstrap or Foundation)
+Use semantic elements when possible/appropriate
+Use at least 3 of the following CSS techniques (Go to W3Schools if you need to review)
+CSS Grid
+Box Shadows
+Border radius
+Webfonts (including icon fonts) (Google Fonts) (Links to an external site.)
+CSS Gradients
+Flexbox
+Variables
+Font Awesome Icons
+Have a consistent navigation system across all pages and distinct normal, :hover, and :active states
+Find and use properly-licensed images (Unsplash, Pixabay, etc.)
+Use alt tags on your images
+Use responsive/fluid units (ems, percentages, etc.) for container widths; note that fully-responsive design is not required and we will just be evaluating your design on the desktop for this assignment
+Upload your project to MCCDGM and GitHub; update your index page to link to your project and other labs
+You are encouraged, but not required, to:
+
+Create a logo
+Create your own image content
+Add your own content
+Use additional pages if that makes more sense with your layout
+You will be evaluated on your code structure, design/style, and appropriate content organization. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- I ended up spending too much time trying to figure out which elements were relevant. Since I kept deleting elements I needed after two weeks, I gave up on it and am keeping the style sheet as is from w3schools. -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- image sources from pixabay.com -->
+  <header>
+    <div id="pacman">
+      <div>
+        <h1>Hist Cafe</h1>
+      </div>
+    </div>
+    <h1>Hist Cafe</h1>
+    <h1></h1>
+  </header>
+  <nav>
+    <div class="bar">
+      <ul>
+        <li><a href="main.html">Main</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="divider"></div>
+    
+    <div class="w3-content w3-display-container">
+      <div class="mySlides">
+        <a href="menu.html#caramel"><img src="images/chai-3681248_1920.jpg"alt="Chai">
+        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+          New! Chai Galore!
+        </div>
+      </div></a>
+      <div class="mySlides">
+        <a href="menu.html#latte"><img src="images/coffee-1711012_1920.jpg"alt="Cat Latte">
+        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+          Holiday Latte Art!
+        </div>
+      </div></a>
+      <div class="mySlides">
+        <a href="menu.html#bingsu"><img src="images/ice-1716100_1920.jpg"alt="Bingsu">
+        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+          Special! Specialty Shaved Ice
+        </div>
+      </div></a>
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <section class="promo">
+      <div class="box">
+        <img src="../flexbox-business-site/images/stranger.jpeg" alt="June Day">
+        <div class="testimonial-content">
+          <q>Best Service and Environment with Great Variety of Drinks!</q>
+          <cite>— June Tea</cite>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <div class="whitebox">
+      <div class="textbox">
+      <h2>Our Cafe</h2>
+      <p>Kale chips hell of migas PBR&B put a bird on it freegan. Fixie bushwick bespoke keytar artisan chillwave trust fund. Tumeric waistcoat brooklyn, biodiesel glossier crucifix tumblr pabst pour-over taxidermy trust fund freegan aesthetic. Bitters aesthetic kinfolk, meggings bicycle rights typewriter butcher tumeric echo park scenester. Ramps gentrify actually wayfarers tumblr edison bulb kogi. Photo booth gastropub mustache pitchfork af leggings.</p>
+      <p>Kinfolk put a bird on it four dollar toast godard. Messenger bag wolf viral, succulents leggings fashion axe plaid cray coloring book ramps craft beer hot chicken mlkshk gluten-free stumptown. Gastropub meditation literally, flannel shabby chic keytar fashion axe cardigan. Kickstarter tousled lumbersexual cred butcher tumeric.</p>
+    </div></div>
+  </main>
+  <div class="divider"></div>
+  <footer>
+    <div class="whitebox">
+      © Laughing Coffee, all rights reserved
+    </div>
+  </footer>
+  <script src="script1.js"></script>
+</body>
+</html>

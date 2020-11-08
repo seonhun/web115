@@ -1,0 +1,374 @@
+* {
+    font-family: 'Permanent Marker', cursive;
+}
+.mySlides {
+    display:none;
+    background-color: rgba(0, 0, 0, 0.19);
+}
+.mySlides img {
+    max-height: 500px;
+    width: auto;
+    max-width: 100%;
+}
+.w3-content, .w3-display-container {
+    max-width: 50em;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+:root {
+    --pColor: rgb(128, 15, 15);
+    --sColor:  rgb(202, 94, 22);
+    --tColor:  rgb(153, 114, 15)
+}
+h1 {
+    font-family: 'Kaushan Script', cursive;
+}
+#pacman {
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid var(--tColor);
+    border-left: 60px solid var(--sColor);
+    border-bottom: 60px solid var(--tColor);
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    justify-content: left;
+    box-shadow: 0 0 1px var(--pColor);
+}
+header div div h1{
+    /* position:absolute; */
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    text-align: left;
+    justify-content: left;
+    font-size: 0.8rem;
+    overflow: visible;
+    color: white;
+    
+}
+header {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pColor);
+    display: flex;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+    justify-content: space-between;
+    box-shadow: 0 0 5px var(--pColor);
+}
+nav {
+    /* height: 65px; */
+    background-color: var(--sColor);
+    width: 100%;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 5px var(--pColor);
+    justify-content: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background: fixed url(images/coffee-917613_1920.jpg) center / cover, rgba(110, 58, 58, 0.442);
+    background-image: cross-fade();
+}
+.sec {
+    background: fixed url(images/coffee-5355428_1920.jpg) center / cover, rgba(110, 58, 58, 0.442);
+}
+.thir {
+    background: fixed url(images/coffee-1324126_1920.jpg) center / cover, rgba(110, 58, 58, 0.442);
+}
+.bar {
+    justify-content: space-between;
+}
+nav ul {
+    margin: 0 1rem;
+    flex-grow: 1;
+    justify-content: center;
+}
+nav li {
+    display: inline-block;
+    padding: 1em;
+}
+@media only screen and (max-width: 992px){
+    nav li {
+        padding: 0.75em;
+    }
+    nav li a{
+        padding: 0.5em 0.5em;
+        width: 6em;
+    }
+    .grid-container {
+        grid-template:
+        'gMap gMap'
+        'sAddress sAddress'
+        'sIcons sIcons'
+        'menuItems menuItems' 
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems' 
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems' 
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems';
+    }
+}
+@media only screen and (max-width: 600px){
+    nav ul {
+        margin: 0 0.5rem;
+    }
+    nav li {
+        padding: 0.25em;
+    }
+    nav li a{
+        padding: 0.025em 0.025em;
+        width: 4em;
+    }
+    .item1 {
+        display: none;
+    }
+    .grid-container {
+        grid-template:
+        'sAddress sAddress'
+        'sIcons sIcons'
+        'menuItems menuItems' 
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems' 
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems' 
+        'menuItems menuItems'
+        'menuItems menuItems'
+        'menuItems menuItems';
+    }
+}
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75em 0.75em;
+    background: var(--tColor);
+    cursor: pointer;
+    width: 7em;
+    text-align: center;
+    box-shadow: 0 0 1px var(--pColor);
+}
+nav li a:hover {
+    background: goldenrod;
+    box-shadow: 0 0 1px var(--tColor);
+}
+.promo {
+    background: var(--pColor);
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 0 2px var(--sColor);
+}
+
+.promo .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo img {
+    border-radius: 50%;
+    width: 130px;
+    margin-right: 1rem;
+    box-shadow: 0 0 2px var(--sColor);
+}
+
+.promo q,
+.promo cite {
+    display: block;
+}
+.whitebox {
+    background: var(--sColor);
+    color: #fff;
+    padding: 2em;
+    box-shadow: 0 0 2px var(--pColor);
+}
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    line-height: 1.25em;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.divider {
+    background: transparent;
+    padding: 1em;
+}
+footer {
+    text-align: right;
+}
+.item1 { grid-area: gMap}
+.item2 { grid-area: sIcons}
+.item3 { grid-area: sAddress}
+.item4 {
+    /* grid-area: menuItems; */
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+.item5 {
+    /* grid-area: menuItems; */
+    grid-column-end: span 0.25;
+    grid-row-end: span 0.25;
+}
+
+.gridbox2 {
+    display: grid;
+    width: 100%;
+    min-width: 20%;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 0.5rem 0.5rem;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(6, 3fr);
+    grid-template-rows: auto;
+    justify-items: stretch;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 2px;
+    grid-gap: 4rem;
+}
+
+.gridbox {
+    display: grid;
+    grid-template:
+    'gMap gMap sAddress sAddress'
+    'gMap gMap sIcons sIcons'
+    'menuItems menuItems menuItems menuItems' 
+    'menuItems menuItems menuItems menuItems'
+    'menuItems menuItems menuItems menuItems'
+    'menuItems menuItems menuItems menuItems'
+    'menuItems menuItems menuItems menuItems'
+    'menuItems menuItems menuItems menuItems'
+    'menuItems menuItems menuItems menuItems';
+    grid-gap: 0.5em;
+    padding: 0.5em;
+}
+
+.textbox {
+    text-align: stretch;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    max-width: 90%;
+    min-width: 10%;
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    list-style-type: disc;
+    margin-right: 0%;
+    flex: 1;
+}
+div div ul li a {
+    background-color: var(--pColor);
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+}
+div div ul li {
+    display: inline-block;
+}
+i {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+.item2 {
+    line-height: 1em;
+}
+.gridbox > div {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+  }
+
+.menutext {
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    transform:translate(-50%,0%);
+    /* padding:0.01em 16px; */
+    font-size: 1.5em;
+    color: white;
+    width: fit-content;
+    background: var(--pColor);
+    text-align: center;
+    padding: 5px 10px;
+    /* display: table; */
+}
+.item4 {
+    height: 30em;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.19);
+    /* width: fit-content; */
+}
+.item4 .panel img{
+    max-height: 30em;
+    width: 100%;
+}
+.item4 .panel .img2 {
+    max-height: 15em;
+    width: 100%;
+}
+.item4 .panel {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.container {
+    position: relative;
+    overflow: hidden;
+}
+.item4 figcaption {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item4:before {
+    content: '';
+    background: fixed url(images/coffee-690054_1920.jpg) center / cover, rgba(110, 58, 58, 0.442);
+    filter: blur(20px);
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    position: absolute;
+    top: 0;
+    box-shadow: inset 0 0 500px 500px rgb(0 0 0 / 0.15);
+}
