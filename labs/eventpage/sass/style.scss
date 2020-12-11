@@ -1,0 +1,171 @@
+header {
+    background: cadetblue;
+    text-align: center;
+    color: white;
+    .col-3 {
+        img {
+            width: 100px;
+            height: 100px;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+    }
+    .col-6 {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+}
+footer {
+    background: cadetblue;
+    // height: 50px;
+    height: 3em;
+    .blockquote-footer {
+        color: white;
+    }
+    // h3 {
+    //     padding-top: 1em;
+    // }
+}
+
+.container2 {
+    min-height: calc(100vh - 70px);
+}
+.parallaxbase {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 75vh; */
+    opacity: 1;
+    position: relative;
+    .parallax {
+        background-image: url('../images/graduation-995042_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .parallax1 {
+        background-image: url('../images/invitation-2508607_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .parallax2 {
+        background-image: url('../images/timetable-3222250_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .parallax3 {
+        background-image: url('../images/time-2189800_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .parallax4 {
+        background-image: url('../images/business-4241785_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .parallax5 {
+        background-image: url('../images/day-planner-828611_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .parallax6 {
+        background-image: url('../images/learn-3980941_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .parallax7 {
+        background-image: url('../images/food-680180_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .parallax8 {
+        background-image: url('../images/pillows-1031079_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .parallax9 {
+        background-image: url('../images/question-mark-3255140_1920.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 125vh;
+        opacity: .18;
+        position: relative;
+    }
+    .panel {
+        width: 75%;
+        text-align: center;
+        margin: 10px auto;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        p{
+            opacity: 1;
+        }
+    }
+
+}
+[class*="parallaxbase"] {
+    height: 175vh;
+}
+    @media only screen and (min-height: 200px) {
+        .parallaxbase {height: 150vh;}
+    }
+    @media only screen and (min-height: 300px) {
+        .parallaxbase {height: 125vh;}
+    }
+
+h1 {
+    font-family: 'Bree Serif', serif;
+}
+nav {
+    opacity: 1;
+    font-family: 'Artifika', serif;
+}
